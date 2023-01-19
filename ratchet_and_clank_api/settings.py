@@ -31,6 +31,11 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'ratchet_and_clank_api.characters',
+    'ratchet_and_clank_api.gadgets',
+    'ratchet_and_clank_api.planets',
+    'ratchet_and_clank_api.games',
+    'ratchet_and_clank_api.weapons',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
