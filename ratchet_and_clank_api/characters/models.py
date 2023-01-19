@@ -18,9 +18,12 @@ class Character(models.Model):
     )
     first_appearance = models.ForeignKey(
         Game,
-        related_name='debuted',
+        related_name='character_debuted',
         on_delete=models.CASCADE,
         default=None,
         null=True,
         blank=True,
     )
+
+    def __str__(self) -> str:
+        return self.name
