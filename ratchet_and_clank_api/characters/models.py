@@ -3,12 +3,12 @@ from ratchet_and_clank_api.games.models import (
     Game
 )
 
-# Create your models here.
 
 class Species(models.TextChoices):
     lombax = 'lombax'
     robot = 'robot'
     unknown = 'unknown'
+
 
 class Character(models.Model):
     name = models.CharField(max_length=255)
