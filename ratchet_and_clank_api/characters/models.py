@@ -10,7 +10,6 @@ class Species(models.TextChoices):
     unknown = 'unknown'
 
 
-
 class Character(models.Model):
     name = models.CharField(max_length=255)
     species = models.CharField(max_length=255, choices=Species.choices)
