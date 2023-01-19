@@ -7,4 +7,4 @@ from ratchet_and_clank_api.games.models import (
 
 @admin.register(Game)
 class GameAdmin(admin.ModelAdmin):
-    list_display = ('name',)
+    list_display = ('name', 'id', 'release_date',)

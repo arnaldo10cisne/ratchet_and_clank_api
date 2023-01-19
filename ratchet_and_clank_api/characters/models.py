@@ -16,3 +16,11 @@ class Character(models.Model):
     appearances = models.ManyToManyField(
         Game,
     )
+    first_appearance = models.ForeignKey(
+        Game,
+        related_name='debuted',
+        on_delete=models.CASCADE,
+        default=None,
+        null=True,
+        blank=True,
+    )
